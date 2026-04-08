@@ -1,0 +1,15 @@
+html {
+    scroll-behavior: smooth;
+}
+/* 초기 상태: 아래로 30px 내려가 있고 투명함 */
+.fade-in-up {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+/* 활성화 상태: 제자리로 올라오고 선명해짐 */
+.fade-in-up.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}

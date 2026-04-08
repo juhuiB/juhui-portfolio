@@ -1,0 +1,1455 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>백주희 포트폴리오 | UI 엔지니어</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" href="/favicon.ico" />
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <script src="/assets/js/common.js"></script>
+    <script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ["Arial", "Helvetica", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="bg-white dark:bg-black text-black dark:text-white font-sans">
+    <a
+      href="#main-content"
+      tabindex="-1"
+      class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-[60] focus:bg-blue-600 focus:text-white focus:px-4 focus:py-2 focus:rounded-md"
+    >
+      본문 바로가기
+    </a>
+
+    <header
+      class="fixed top-0 left-0 w-full bg-white/80 dark:bg-black/80 backdrop-blur-md border-b border-neutral-200 dark:border-neutral-800 z-50 transition-colors"
+    >
+      <nav
+        class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center"
+        aria-label="주요 메뉴"
+      >
+        <div
+          class="text-xl font-black tracking-tighter text-neutral-900 dark:text-white"
+        >
+          BAEK JUHUI<span class="text-blue-600">.</span>
+        </div>
+
+        <div class="flex items-center gap-8">
+          <ul class="hidden md:flex gap-8" id="nav-list">
+            <li class="relative">
+              <a
+                href="#about"
+                aria-label="자기소개 및 개요"
+                class="relative nav-link text-sm font-bold transition-colors uppercase tracking-widest text-neutral-600 dark:text-neutral-400 hover:text-blue-600"
+                >About</a
+              >
+              <span
+                class="active-bar absolute -bottom-1 left-0 w-full h-0.5 bg-blue-600 hidden"
+              ></span>
+            </li>
+            <li class="relative">
+              <a
+                href="#projects"
+                aria-label="수행 프로젝트"
+                class="nav-link text-sm font-bold transition-colors uppercase tracking-widest text-neutral-600 dark:text-neutral-400 hover:text-blue-600"
+                >Projects</a
+              >
+              <span
+                class="active-bar absolute -bottom-1 left-0 w-full h-0.5 bg-blue-600 hidden"
+              ></span>
+            </li>
+            <li class="relative">
+              <a
+                href="#skills"
+                aria-label="기술 스택 및 능력"
+                class="nav-link text-sm font-bold transition-colors uppercase tracking-widest text-neutral-600 dark:text-neutral-400 hover:text-blue-600"
+                >Skills</a
+              >
+              <span
+                class="active-bar absolute -bottom-1 left-0 w-full h-0.5 bg-blue-600 hidden"
+              ></span>
+            </li>
+            <li class="relative">
+              <a
+                href="#contact"
+                aria-label="연락처"
+                class="nav-link text-sm font-bold transition-colors uppercase tracking-widest text-neutral-600 dark:text-neutral-400 hover:text-blue-600"
+                >Contact</a
+              >
+              <span
+                class="active-bar absolute -bottom-1 left-0 w-full h-0.5 bg-blue-600 hidden"
+              ></span>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main id="main-content">
+      <!-- hero area -->
+      <section
+        class="py-32 md:py-30 relative overflow-hidden bg-white"
+        aria-labelledby="hero-heading"
+      >
+        <div class="max-w-6xl mx-auto px-6 relative z-10">
+          <div
+            class="mb-8 inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-blue-50 text-blue-700 text-sm font-bold border border-blue-100"
+          >
+            <!-- 파랑색 라벨 -->
+            <div class="relative flex h-2 w-2">
+              <span
+                class="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75"
+                aria-hidden="true"
+              ></span>
+              <span
+                class="relative inline-flex rounded-full h-2 w-2 bg-blue-500"
+              ></span>
+            </div>
+            <!-- //파랑색 라벨 -->
+            실전 적응력이 검증된 웹 퍼블리셔
+          </div>
+
+          <h1
+            id="hero-heading"
+            class="text-5xl md:text-7xl lg:text-8xl font-extrabold tracking-tight leading-[1.1] text-neutral-900"
+          >
+            기획의 의도를 <br />
+            <span class="text-blue-600">안정적인 기술</span>로 <br />
+            연결합니다.
+          </h1>
+
+          <p
+            class="mt-10 text-lg md:text-2xl text-neutral-600 max-w-3xl leading-relaxed font-medium"
+          >
+            단순한 화면 구현을 넘어 사용자의 판단 흐름을 설계하며,
+            <br class="hidden md:block" />
+            다양한 프로젝트 환경에 빠르게 적응하여 최적의 UI 구조를 제안합니다.
+          </p>
+
+          <ul class="mt-12 flex flex-wrap gap-3" aria-label="핵심 역량 키워드">
+            <li
+              class="px-5 py-2.5 bg-neutral-50 rounded-xl text-neutral-800 text-sm md:text-base font-semibold border border-neutral-200 shadow-sm"
+            >
+              웹 표준 & 접근성 준수
+            </li>
+            <li
+              class="px-5 py-2.5 bg-neutral-50 rounded-xl text-neutral-800 text-sm md:text-base font-semibold border border-neutral-200 shadow-sm"
+            >
+              컴포넌트 중심 설계
+            </li>
+            <li
+              class="px-5 py-2.5 bg-neutral-50 rounded-xl text-neutral-800 text-sm md:text-base font-semibold border border-neutral-200 shadow-sm"
+            >
+              AI 기반 빠른 문제 해결
+            </li>
+            <li
+              class="px-5 py-2.5 bg-neutral-50 rounded-xl text-neutral-800 text-sm md:text-base font-semibold border border-neutral-200 shadow-sm"
+            >
+              공공·금융 프로젝트 수행 경험
+            </li>
+          </ul>
+
+          <div class="mt-14 flex gap-4">
+            <a
+              href="#projects"
+              class="px-8 py-4 bg-blue-600 text-white rounded-lg font-bold text-lg hover:bg-blue-700 transition-colors shadow-lg shadow-blue-200"
+            >
+              프로젝트 보기
+            </a>
+          </div>
+        </div>
+
+        <!-- 섹션 배경 격자무늬 -->
+        <div
+          class="absolute inset-0 bg-[linear-gradient(to_right,#00000008_1px,transparent_1px),linear-gradient(to_bottom,#00000008_1px,transparent_1px)] bg-[size:40px_40px] [mask-image:radial-gradient(ellipse_80%_50%_at_50%_0%,#000_70%,transparent_100%)] pointer-events-none"
+        ></div>
+        <!-- //섹션 배경 격자무늬 -->
+      </section>
+      <!-- //hero area -->
+
+      <!-- about -->
+      <section
+        id="about"
+        class="py-24 py-10 bg-neutral-50 dark:bg-neutral-950"
+        aria-labelledby="about-title"
+      >
+        <div class="relative max-w-6xl mx-auto px-6 py-24">
+          <div
+            class="absolute -top-20 left-3 text-[120px] font-black text-neutral-200 pointer-events-none select-none"
+          >
+            <span class="">02 </span>
+          </div>
+
+          <h2
+            id="about-title"
+            class="text-3xl md:text-4xl font-black tracking-tight mb-16"
+          >
+            ABOUT
+          </h2>
+
+          <div class="grid lg:grid-cols-2 gap-16 items-start">
+            <div class="space-y-8">
+              <div class="space-y-4">
+                <h3
+                  class="text-3xl md:text-4xl font-black text-neutral-900 dark:text-white leading-tight"
+                >
+                  기획과 실행 사이를 <br />
+                  <span class="text-blue-600">유연하게 연결</span>합니다.
+                </h3>
+                <p
+                  class="text-lg leading-relaxed text-neutral-700 dark:text-neutral-300 break-keep"
+                >
+                  디자인과 개발 사이의 간극을 좁히며, 사용자가 신뢰할 수 있는
+                  인터페이스를 만듭니다. <br class="hidden md:block" />
+                  끊임없는 학습으로 다진
+                  <strong class="text-blue-600 font-bold">기술 적응력</strong>과
+                  대규모 프로젝트에서 쌓은
+                  <strong class="text-blue-600 font-bold">실전 경험</strong>
+                  을 바탕으로 팀의 비즈니스 가치를 안정적으로 연결합니다.
+                </p>
+              </div>
+
+              <ul class="flex flex-wrap gap-2 pt-2" aria-label="핵심 가치">
+                <li
+                  class="px-3 py-1 bg-blue-50 dark:bg-blue-900/30 text-blue-600 text-[10px] font-black rounded-md tracking-tighter"
+                >
+                  빠른 적응력
+                </li>
+                <li
+                  class="px-3 py-1 bg-blue-50 dark:bg-blue-900/30 text-blue-600 text-[10px] font-black rounded-md tracking-tighter"
+                >
+                  안정적인 구현
+                </li>
+                <li
+                  class="px-3 py-1 bg-blue-50 dark:bg-blue-900/30 text-blue-600 text-[10px] font-black rounded-md tracking-tighter"
+                >
+                  능동적 소통
+                </li>
+              </ul>
+
+              <ul
+                class="pt-8 border-t border-neutral-200 dark:border-neutral-800 flex flex-wrap gap-6 opacity-40 grayscale hover:grayscale-0 transition-all"
+                aria-label="사용 가능한 협업 및 디자인 도구"
+              >
+                <li class="text-xs font-black text-neutral-500 uppercase">
+                  Git
+                </li>
+                <li class="text-xs font-black text-neutral-500 uppercase">
+                  SVN
+                </li>
+                <li class="text-xs font-black text-neutral-500 uppercase">
+                  PhotoShop
+                </li>
+                <li class="text-xs font-black text-neutral-500 uppercase">
+                  Adobe XD
+                </li>
+                <li class="text-xs font-black text-neutral-500 uppercase">
+                  Zeplin
+                </li>
+              </ul>
+            </div>
+
+            <div class="space-y-4">
+              <div
+                class="mb-2 inline-flex items-center gap-2 px-4 py-1.5 text-blue-700 text-sm font-bold"
+              >
+                <span class="relative flex h-2 w-2" aria-hidden="true">
+                  <span
+                    class="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75"
+                    aria-hidden="true"
+                  ></span>
+                  <span
+                    class="relative inline-flex rounded-full h-2 w-2 bg-blue-500"
+                  ></span>
+                </span>
+                업무 및 협업 방식
+              </div>
+
+              <div class="grid gap-4">
+                <article
+                  class="p-6 rounded-3xl bg-white dark:bg-neutral-900 border border-neutral-100 dark:border-neutral-800 shadow-sm"
+                >
+                  <div class="flex justify-between items-start mb-3">
+                    <h3
+                      class="text-lg font-bold text-neutral-900 dark:text-white"
+                    >
+                      디자인 협업 및 구현
+                    </h3>
+                    <span
+                      class="text-[10px] font-black text-blue-500 bg-blue-50 dark:bg-blue-900/20 px-2 py-0.5 rounded uppercase"
+                      >Figma</span
+                    >
+                  </div>
+                  <p
+                    class="text-sm text-neutral-500 dark:text-neutral-400 mb-4 break-keep"
+                  >
+                    디자인 시스템을 깊이 있게 분석하여 UI 구현 정확도 100%를
+                    지향합니다.
+                  </p>
+                  <ul class="flex flex-wrap gap-x-4 gap-y-2">
+                    <li
+                      class="flex items-center gap-1.5 text-[11px] font-bold text-neutral-400 dark:text-neutral-500"
+                    >
+                      <span
+                        class="w-1 h-1 bg-blue-400 rounded-full"
+                        aria-hidden="true"
+                      ></span
+                      >컴포넌트 단위 구조 설계
+                    </li>
+                    <li
+                      class="flex items-center gap-1.5 text-[11px] font-bold text-neutral-400 dark:text-neutral-500"
+                    >
+                      <span
+                        class="w-1 h-1 bg-blue-400 rounded-full"
+                        aria-hidden="true"
+                      ></span
+                      >인터랙션 정밀 구현
+                    </li>
+                    <li
+                      class="flex items-center gap-1.5 text-[11px] font-bold text-neutral-400 dark:text-neutral-500"
+                    >
+                      <span
+                        class="w-1 h-1 bg-blue-400 rounded-full"
+                        aria-hidden="true"
+                      ></span
+                      >가이드라인 준수
+                    </li>
+                  </ul>
+                </article>
+
+                <article
+                  class="p-6 rounded-3xl bg-white dark:bg-neutral-900 border border-neutral-100 dark:border-neutral-800 shadow-sm"
+                >
+                  <div class="flex justify-between items-start mb-3">
+                    <h3
+                      class="text-lg font-bold text-neutral-900 dark:text-white"
+                    >
+                      효율적인 커뮤니케이션
+                    </h3>
+                    <span
+                      class="text-[10px] font-black text-blue-500 bg-blue-50 dark:bg-blue-900/20 px-2 py-0.5 rounded uppercase"
+                      >Teams / Slack</span
+                    >
+                  </div>
+                  <p
+                    class="text-sm text-neutral-500 dark:text-neutral-400 mb-4 break-keep"
+                  >
+                    실시간 이슈를 공유하고 유연한 소통을 통해 프로젝트 업무
+                    상황을 투명하게 관리합니다.
+                  </p>
+                  <ul class="flex flex-wrap gap-x-4 gap-y-2">
+                    <li
+                      class="flex items-center gap-1.5 text-[11px] font-bold text-neutral-400 dark:text-neutral-500"
+                    >
+                      <span
+                        class="w-1 h-1 bg-blue-400 rounded-full"
+                        aria-hidden="true"
+                      ></span
+                      >실시간 이슈 트래킹
+                    </li>
+                    <li
+                      class="flex items-center gap-1.5 text-[11px] font-bold text-neutral-400 dark:text-neutral-500"
+                    >
+                      <span
+                        class="w-1 h-1 bg-blue-400 rounded-full"
+                        aria-hidden="true"
+                      ></span
+                      >능동적인 소통
+                    </li>
+                    <li
+                      class="flex items-center gap-1.5 text-[11px] font-bold text-neutral-400 dark:text-neutral-500"
+                    >
+                      <span
+                        class="w-1 h-1 bg-blue-400 rounded-full"
+                        aria-hidden="true"
+                      ></span
+                      >업무 히스토리 관리
+                    </li>
+                  </ul>
+                </article>
+
+                <article
+                  class="p-6 rounded-3xl bg-white dark:bg-neutral-900 border border-neutral-100 dark:border-neutral-800 shadow-sm"
+                >
+                  <div class="flex justify-between items-start mb-3">
+                    <h3
+                      class="text-lg font-bold text-neutral-900 dark:text-white"
+                    >
+                      안정적인 버전 관리
+                    </h3>
+                    <span
+                      class="text-[10px] font-black text-blue-500 bg-blue-50 dark:bg-blue-900/20 px-2 py-0.5 rounded uppercase"
+                      >Git / SVN</span
+                    >
+                  </div>
+                  <p
+                    class="text-sm text-neutral-500 dark:text-neutral-400 mb-4 break-keep"
+                  >
+                    프로젝트 환경에 최적화된 도구 활용으로 소스 코드를
+                    안정적으로 관리하고 충돌을 방지합니다.
+                  </p>
+                  <ul class="flex flex-wrap gap-x-4 gap-y-2">
+                    <li
+                      class="flex items-center gap-1.5 text-[11px] font-bold text-neutral-400 dark:text-neutral-500"
+                    >
+                      <span
+                        class="w-1 h-1 bg-blue-400 rounded-full"
+                        aria-hidden="true"
+                      ></span
+                      >GitFlow 전략 활용
+                    </li>
+                    <li
+                      class="flex items-center gap-1.5 text-[11px] font-bold text-neutral-400 dark:text-neutral-500"
+                    >
+                      <span
+                        class="w-1 h-1 bg-blue-400 rounded-full"
+                        aria-hidden="true"
+                      ></span
+                      >SVN 환경 완벽 적응
+                    </li>
+                    <li
+                      class="flex items-center gap-1.5 text-[11px] font-bold text-neutral-400 dark:text-neutral-500"
+                    >
+                      <span
+                        class="w-1 h-1 bg-blue-400 rounded-full"
+                        aria-hidden="true"
+                      ></span
+                      >코드 형상 관리 및 백업
+                    </li>
+                  </ul>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- //about -->
+      <!-- projects -->
+      <section
+        id="projects"
+        class="relative py-24 bg-neutral-950 text-white"
+        aria-labelledby="projects-title"
+      >
+        <div class="relative max-w-6xl mx-auto px-6 py-24">
+          <div
+            class="absolute -top-20 left-3 text-[120px] font-black text-white/60 pointer-events-none select-none"
+            aria-hidden="true"
+          >
+            03
+          </div>
+
+          <h2
+            id="projects-title"
+            class="text-3xl md:text-4xl font-black tracking-tight mb-10 uppercase"
+          >
+            Projects
+          </h2>
+
+          <p class="text-neutral-400 text-lg mb-12 break-keep">
+            실무 환경에서 마주한 문제를 기술로 해결하고,
+            <br class="hidden md:block" />
+            사용자 경험을 개선한 주요 프로젝트입니다.
+          </p>
+
+          <ul class="grid gap-12">
+            <li class="fade-in-up">
+              <article
+                class="group relative bg-neutral-900 border border-neutral-800 rounded-3xl overflow-hidden hover:border-blue-500/50 transition-all p-8 md:p-12"
+              >
+                <div class="grid lg:grid-cols-12 gap-8 lg:gap-16">
+                  <div class="lg:col-span-5 space-y-6">
+                    <div>
+                      <span
+                        class="text-blue-500 font-bold text-sm tracking-widest uppercase"
+                        >Financial</span
+                      >
+                      <h3
+                        class="text-3xl break-keep md:text-4xl font-bold text-white mt-2 group-hover:text-blue-400 transition-colors"
+                      >
+                        교육부 초등학교 바우처프로그램 시스템 구축
+                      </h3>
+                      <p class="text-neutral-500 text-sm mt-1">
+                        2025.12 ~ 2026.03
+                      </p>
+                    </div>
+                    <p
+                      class="text-neutral-300 text-lg leading-relaxed break-keep"
+                    >
+                      우리 아이 방과후 프로그램 확인부터 납부까지 온라인에서 한
+                      번에 처리하는 교육 바우처 통합 관리 서비스
+                    </p>
+                    <div class="pt-4 border-t border-neutral-800">
+                      <h4
+                        class="text-white text-sm font-bold mb-3 uppercase tracking-tighter"
+                      >
+                        역할 및 기술 스택
+                      </h4>
+                      <p class="text-blue-400 text-sm font-bold mb-4">
+                        퍼블리셔 100% / 프론트 30%
+                      </p>
+                      <ul class="flex flex-wrap gap-2" aria-label="사용한 기술">
+                        <li
+                          class="text-[11px] font-black bg-neutral-800 text-neutral-300 px-3 py-1.5 rounded-md border border-neutral-700 uppercase"
+                        >
+                          Vue 3
+                        </li>
+                        <li
+                          class="text-[11px] font-black bg-neutral-800 text-neutral-300 px-3 py-1.5 rounded-md border border-neutral-700 uppercase"
+                        >
+                          Vuetify
+                        </li>
+                        <li
+                          class="text-[11px] font-black bg-neutral-800 text-neutral-300 px-3 py-1.5 rounded-md border border-neutral-700 uppercase"
+                        >
+                          Lottie
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <div
+                    class="lg:col-span-7 bg-neutral-800/30 rounded-2xl p-6 md:p-8 border border-neutral-800"
+                  >
+                    <h4
+                      class="text-white font-bold mb-6 flex items-center gap-2"
+                    >
+                      <span
+                        class="w-1.5 h-1.5 bg-blue-500 rounded-full"
+                        aria-hidden="true"
+                      ></span>
+                      주요 수행 업무
+                    </h4>
+                    <ul class="space-y-4">
+                      <li
+                        class="flex gap-3 text-neutral-400 text-sm md:text-base leading-relaxed items-start"
+                      >
+                        <span
+                          class="text-blue-500 mt-[5px] flex-shrink-0 text-[10px]"
+                          aria-hidden="true"
+                          >●</span
+                        >
+                        <span
+                          >Vue 3 유지보수가 용이한 컴포넌트 설계 및 구현</span
+                        >
+                      </li>
+
+                      <li
+                        class="flex gap-3 text-neutral-400 text-sm md:text-base leading-relaxed items-start"
+                      >
+                        <span
+                          class="text-blue-500 mt-[5px] flex-shrink-0 text-[10px]"
+                          aria-hidden="true"
+                          >●</span
+                        >
+                        <span>
+                          Storybook을 활용한 독립적 컴포넌트 개발 환경 구축 및
+                          UI 라이브러리 문서화
+                        </span>
+                      </li>
+
+                      <li
+                        class="flex gap-3 text-neutral-400 text-sm md:text-base leading-relaxed items-start"
+                      >
+                        <span
+                          class="text-blue-500 mt-[5px] flex-shrink-0 text-[10px]"
+                          aria-hidden="true"
+                          >●</span
+                        >
+                        <span
+                          >CSS Transition을 활용한 모바일 최적화 배너 및 동적 UI
+                          구현</span
+                        >
+                      </li>
+
+                      <li
+                        class="flex gap-3 text-neutral-400 text-sm md:text-base leading-relaxed items-start"
+                      >
+                        <span
+                          class="text-blue-500 mt-[5px] flex-shrink-0 text-[10px]"
+                          aria-hidden="true"
+                          >●</span
+                        >
+                        <span>
+                          화면 설계서 기반의 UI 산출물 작성 및 단위 테스트 수행,
+                          실제 서비스 이용자를 위한 학부모용 사이트 이용 매뉴얼
+                          제작
+                        </span>
+                      </li>
+                    </ul>
+
+                    <div class="flex items-center gap-4 mt-10">
+                      <a
+                        href="https://edu.zeropaypoint.or.kr/main"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        title="새 창으로 방과후 드림 사이트 열기"
+                        class="text-xs font-bold text-white border-b border-white hover:text-blue-400 hover:border-blue-400 transition-all pb-1"
+                      >
+                        Visit Site
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </li>
+
+            <li class="fade-in-up">
+              <article
+                class="group relative bg-neutral-900 border border-neutral-800 rounded-3xl overflow-hidden hover:border-blue-500/50 transition-all p-8 md:p-12"
+              >
+                <div class="grid lg:grid-cols-12 gap-8 lg:gap-16">
+                  <div class="lg:col-span-5 space-y-6">
+                    <div>
+                      <span
+                        class="text-blue-500 font-bold text-sm tracking-widest uppercase"
+                        >Financial</span
+                      >
+                      <h3
+                        class="text-3xl break-keep md:text-4xl font-bold text-white mt-2 group-hover:text-blue-400 transition-colors"
+                      >
+                        우리은행 채널시스템 고도화
+                      </h3>
+                      <p class="text-neutral-500 text-sm mt-1">
+                        2025.10 - 2026.04
+                      </p>
+                    </div>
+                    <p
+                      class="text-neutral-300 text-lg leading-relaxed break-keep"
+                    >
+                      금융권 운영자 및 관리자 시스템 UI 고도화
+                    </p>
+                    <div class="pt-4 border-t border-neutral-800">
+                      <h4
+                        class="text-white text-sm font-bold mb-3 uppercase tracking-tighter"
+                      >
+                        역할 및 기술 스택
+                      </h4>
+                      <p class="text-blue-400 text-sm font-bold mb-4">
+                        퍼블리셔 100% / 프론트 30% / 기획 참여 40%
+                      </p>
+                      <ul class="flex flex-wrap gap-2" aria-label="사용한 기술">
+                        <li
+                          class="text-[11px] font-black bg-neutral-800 text-neutral-300 px-3 py-1.5 rounded-md border border-neutral-700 uppercase"
+                        >
+                          Vue 2
+                        </li>
+                        <li
+                          class="text-[11px] font-black bg-neutral-800 text-neutral-300 px-3 py-1.5 rounded-md border border-neutral-700 uppercase"
+                        >
+                          Axios
+                        </li>
+                        <li
+                          class="text-[11px] font-black bg-neutral-800 text-neutral-300 px-3 py-1.5 rounded-md border border-neutral-700 uppercase"
+                        >
+                          Tailwind CSS
+                        </li>
+                        <li
+                          class="text-[11px] font-black bg-neutral-800 text-neutral-300 px-3 py-1.5 rounded-md border border-neutral-700 uppercase"
+                        >
+                          ElementUI
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <div
+                    class="lg:col-span-7 bg-neutral-800/30 rounded-2xl p-6 md:p-8 border border-neutral-800"
+                  >
+                    <h4
+                      class="text-white font-bold mb-6 flex items-center gap-2"
+                    >
+                      <span
+                        class="w-1.5 h-1.5 bg-blue-500 rounded-full"
+                        aria-hidden="true"
+                      ></span>
+                      주요 수행 업무
+                    </h4>
+                    <ul class="space-y-4">
+                      <li
+                        class="items-center flex gap-3 text-neutral-400 text-sm md:text-base leading-relaxed items-start"
+                      >
+                        <span
+                          class="text-blue-500 flex-shrink-0 text-[10px]"
+                          aria-hidden="true"
+                          >●</span
+                        >
+                        <span
+                          >사용자/관리자 행동 흐름 기준 화면 역할 재정리 및
+                          TO-BE 설계</span
+                        >
+                      </li>
+                      <li
+                        class="items-center flex gap-3 text-neutral-400 text-sm md:text-base leading-relaxed items-start"
+                      >
+                        <span
+                          class="text-blue-500 flex-shrink-0 text-[10px]"
+                          aria-hidden="true"
+                          >●</span
+                        >
+                        <span
+                          >유지·운영을 고려한 마크업 구조 설계 및 공통 컴포넌트
+                          적용</span
+                        >
+                      </li>
+                      <li
+                        class="items-center flex gap-3 text-neutral-400 text-sm md:text-base leading-relaxed items-start"
+                      >
+                        <span
+                          class="text-blue-500 flex-shrink-0 text-[10px]"
+                          aria-hidden="true"
+                          >●</span
+                        >
+                        <span
+                          >변경 가능성이 높은 영역을 구조적으로 분리하여 유연성
+                          확보</span
+                        >
+                      </li>
+                      <li
+                        class="items-center flex gap-3 text-neutral-400 text-sm md:text-base leading-relaxed items-start"
+                      >
+                        <span
+                          class="text-blue-500 flex-shrink-0 text-[10px]"
+                          aria-hidden="true"
+                          >●</span
+                        >
+                        <span
+                          >화면 설계서 기반의 UI 산출물 작성 및 단위 테스트
+                          수행</span
+                        >
+                      </li>
+                      <li
+                        class="items-center flex gap-3 text-neutral-400 text-sm md:text-base leading-relaxed items-start"
+                      >
+                        <span
+                          class="text-blue-500 flex-shrink-0 text-[10px]"
+                          aria-hidden="true"
+                          >●</span
+                        >
+                        <span
+                          >테스트 시나리오에 따른 검증 및 테스트 결과 보고서
+                          산출물 작성</span
+                        >
+                      </li>
+                    </ul>
+
+                    <div class="flex items-center gap-4 mt-10">
+                      <div
+                        class="flex items-center gap-2 px-3 py-1.5 bg-neutral-800/50 border border-neutral-700 rounded-lg"
+                      >
+                        <span
+                          class="w-1.5 h-1.5 bg-red-500 rounded-full animate-pulse"
+                          aria-hidden="true"
+                        ></span>
+                        <span
+                          class="text-[11px] font-bold text-neutral-500 uppercase tracking-tighter"
+                          >보안 프로젝트 (NDA)</span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </li>
+
+            <li class="fade-in-up">
+              <article
+                class="group relative bg-neutral-900 border border-neutral-800 rounded-3xl overflow-hidden hover:border-blue-500/50 transition-all p-8 md:p-12"
+              >
+                <div class="grid lg:grid-cols-12 gap-8 lg:gap-16">
+                  <div class="lg:col-span-5 space-y-6">
+                    <div>
+                      <span
+                        class="text-blue-500 font-bold text-sm tracking-widest uppercase"
+                        >Platform</span
+                      >
+                      <h3
+                        class="break-keep text-3xl md:text-4xl font-bold text-white mt-2 group-hover:text-blue-400 transition-colors"
+                      >
+                        비비드카 <br />
+                        (중고차 거래 플랫폼)
+                      </h3>
+                      <p class="text-neutral-500 text-sm mt-1">
+                        2024.12 - 2025.01
+                      </p>
+                    </div>
+                    <p
+                      class="text-neutral-300 text-lg leading-relaxed break-keep"
+                    >
+                      중고차 거래 플랫폼 및 내 차 시세조회 서비스 UI 구현
+                    </p>
+                    <div class="pt-4 border-t border-neutral-800">
+                      <h4
+                        class="text-white text-sm font-bold mb-3 uppercase tracking-tighter"
+                      >
+                        역할 및 기술 스택
+                      </h4>
+                      <p class="text-blue-400 text-sm font-bold mb-4">
+                        퍼블리셔 100% / 기획 참여 30%
+                      </p>
+                      <ul class="flex flex-wrap gap-2" aria-label="사용한 기술">
+                        <li
+                          class="text-[11px] font-black bg-neutral-800 text-neutral-300 px-3 py-1.5 rounded-md border border-neutral-700 uppercase"
+                        >
+                          Vue 2
+                        </li>
+                        <li
+                          class="text-[11px] font-black bg-neutral-800 text-neutral-300 px-3 py-1.5 rounded-md border border-neutral-700 uppercase"
+                        >
+                          SCSS
+                        </li>
+                        <li
+                          class="text-[11px] font-black bg-neutral-800 text-neutral-300 px-3 py-1.5 rounded-md border border-neutral-700 uppercase"
+                        >
+                          jQuery
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div
+                    class="lg:col-span-7 bg-neutral-800/30 rounded-2xl p-6 md:p-8 border border-neutral-800"
+                  >
+                    <h4
+                      class="text-white font-bold mb-6 flex items-center gap-2"
+                    >
+                      <span
+                        class="w-1.5 h-1.5 bg-blue-500 rounded-full"
+                        aria-hidden="true"
+                      ></span
+                      >주요 수행 업무
+                    </h4>
+                    <ul class="space-y-4">
+                      <li
+                        class="items-center flex gap-3 text-neutral-400 text-sm md:text-base leading-relaxed items-start"
+                      >
+                        <span
+                          class="text-blue-500 flex-shrink-0 text-[10px]"
+                          aria-hidden="true"
+                          >●</span
+                        >
+                        컴포넌트 기반 UI 구현 및 퍼블리싱 가이드 정립
+                      </li>
+                      <li
+                        class="items-center flex gap-3 text-neutral-400 text-sm md:text-base leading-relaxed items-start"
+                      >
+                        <span
+                          class="text-blue-500 flex-shrink-0 text-[10px]"
+                          aria-hidden="true"
+                          >●</span
+                        >
+                        반응형 스타일링 및 주소 API 연동
+                      </li>
+                      <li
+                        class="items-center flex gap-3 text-neutral-400 text-sm md:text-base leading-relaxed items-start"
+                      >
+                        <span
+                          class="text-blue-500 flex-shrink-0 text-[10px]"
+                          aria-hidden="true"
+                          >●</span
+                        >
+                        내부 테스트 및 운영 QA 지원을 통한 서비스 안정화
+                      </li>
+                    </ul>
+                    <div class="flex items-center gap-4 mt-10">
+                      <a
+                        href="https://vividcar.co.kr/portal/index"
+                        target="_blank"
+                        class="text-xs font-bold text-white border-b border-white hover:text-blue-400 hover:border-blue-400 transition-all pb-1"
+                        >Visit Site</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </li>
+
+            <li class="fade-in-up">
+              <article
+                class="group relative bg-neutral-900 border border-neutral-800 rounded-3xl overflow-hidden hover:border-blue-500/50 transition-all p-8 md:p-12"
+              >
+                <div class="grid lg:grid-cols-12 gap-8 lg:gap-16">
+                  <div class="lg:col-span-5 space-y-6">
+                    <div>
+                      <span
+                        class="text-blue-500 font-bold text-sm tracking-widest uppercase"
+                        >Admin System</span
+                      >
+                      <h3
+                        class="break-keep text-3xl md:text-4xl font-bold text-white mt-2 group-hover:text-blue-400 transition-colors"
+                      >
+                        SAVE ESG 플랫폼
+                      </h3>
+                      <p class="text-neutral-500 text-sm mt-1">
+                        2024.06 ~ 2024.10
+                      </p>
+                    </div>
+                    <p
+                      class="text-neutral-300 text-lg leading-relaxed break-keep"
+                    >
+                      ESG 데이터 관리 및 리포팅을 위한 관리자 플랫폼 UI 구현
+                    </p>
+                    <div class="pt-4 border-t border-neutral-800">
+                      <h4
+                        class="text-white text-sm font-bold mb-3 uppercase tracking-tighter"
+                      >
+                        역할 및 기술 스택
+                      </h4>
+                      <p class="text-blue-400 text-sm font-bold mb-4">
+                        퍼블리셔 (관리자 화면 UI 구현)
+                      </p>
+                      <ul class="flex flex-wrap gap-2" aria-label="사용한 기술">
+                        <li
+                          class="text-[11px] font-black bg-neutral-800 text-neutral-300 px-3 py-1.5 rounded-md border border-neutral-700 uppercase"
+                        >
+                          Vue 2
+                        </li>
+                        <li
+                          class="text-[11px] font-black bg-neutral-800 text-neutral-300 px-3 py-1.5 rounded-md border border-neutral-700 uppercase"
+                        >
+                          SCSS
+                        </li>
+                        <li
+                          class="text-[11px] font-black bg-neutral-800 text-neutral-300 px-3 py-1.5 rounded-md border border-neutral-700 uppercase"
+                        >
+                          HTML5
+                        </li>
+                        <li
+                          class="text-[11px] font-black bg-neutral-800 text-neutral-300 px-3 py-1.5 rounded-md border border-neutral-700 uppercase"
+                        >
+                          Chart.js
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <div
+                    class="lg:col-span-7 bg-neutral-800/30 rounded-2xl p-6 md:p-8 border border-neutral-800"
+                  >
+                    <h4
+                      class="text-white font-bold mb-6 flex items-center gap-2"
+                    >
+                      <span
+                        class="w-1.5 h-1.5 bg-blue-500 rounded-full"
+                        aria-hidden="true"
+                      ></span
+                      >주요 수행 업무
+                    </h4>
+                    <ul class="space-y-4">
+                      <li
+                        class="items-center flex gap-3 text-neutral-400 text-sm md:text-base leading-relaxed items-start"
+                      >
+                        <span
+                          class="text-blue-500 flex-shrink-0 text-[10px]"
+                          aria-hidden="true"
+                          >●</span
+                        >
+                        ESG 데이터 관리 플랫폼 퍼블리싱 및 마크업 최적화
+                      </li>
+                      <li
+                        class="items-center flex gap-3 text-neutral-400 text-sm md:text-base leading-relaxed items-start"
+                      >
+                        <span
+                          class="text-blue-500 flex-shrink-0 text-[10px]"
+                          aria-hidden="true"
+                          >●</span
+                        >
+                        관리자 전용 대시보드 UI 구성 및 데이터 시각화 라이브러리
+                        연동 보조
+                      </li>
+                    </ul>
+                    <div class="flex items-center gap-4 mt-10">
+                      <div
+                        class="flex items-center gap-2 px-3 py-1.5 bg-neutral-800/50 border border-neutral-700 rounded-lg"
+                      >
+                        <span
+                          class="w-1.5 h-1.5 bg-red-500 rounded-full animate-pulse"
+                          aria-hidden="true"
+                        ></span>
+                        <span
+                          class="text-[11px] font-bold text-neutral-500 uppercase tracking-tighter"
+                          >보안 프로젝트 (NDA)</span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </li>
+
+            <li>
+              <article
+                class="group relative bg-neutral-900 border border-neutral-800 rounded-3xl overflow-hidden hover:border-blue-500/50 transition-all p-8 md:p-12"
+              >
+                <div class="grid lg:grid-cols-12 gap-8 lg:gap-16">
+                  <div class="lg:col-span-5 space-y-6">
+                    <div>
+                      <span
+                        class="text-blue-500 font-bold text-sm tracking-widest uppercase"
+                        >Public/Financial</span
+                      >
+                      <h3
+                        class="break-keep text-3xl md:text-4xl font-bold text-white mt-2 group-hover:text-blue-400 transition-colors"
+                      >
+                        제로페이 마이데이터 정책자금 플랫폼
+                      </h3>
+                      <p class="text-neutral-500 text-sm mt-1">
+                        2021.10 - 2022.02
+                      </p>
+                    </div>
+                    <p
+                      class="text-neutral-300 text-lg leading-relaxed break-keep"
+                    >
+                      사용자 맞춤형 정책자금 조회 및 신청 서비스 퍼블리싱
+                    </p>
+                    <div class="pt-4 border-t border-neutral-800">
+                      <h4
+                        class="text-white text-sm font-bold mb-3 uppercase tracking-tighter"
+                      >
+                        역할 및 기술 스택
+                      </h4>
+                      <p class="text-blue-400 text-sm font-bold mb-4">
+                        퍼블리셔 100%
+                      </p>
+                      <ul class="flex flex-wrap gap-2" aria-label="사용한 기술">
+                        <li
+                          class="text-[11px] font-black bg-neutral-800 text-neutral-300 px-3 py-1.5 rounded-md border border-neutral-700 uppercase"
+                        >
+                          HTML (시맨틱)
+                        </li>
+                        <li
+                          class="text-[11px] font-black bg-neutral-800 text-neutral-300 px-3 py-1.5 rounded-md border border-neutral-700 uppercase"
+                        >
+                          CSS (반응형)
+                        </li>
+                        <li
+                          class="text-[11px] font-black bg-neutral-800 text-neutral-300 px-3 py-1.5 rounded-md border border-neutral-700 uppercase"
+                        >
+                          jQuery
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div
+                    class="lg:col-span-7 bg-neutral-800/30 rounded-2xl p-6 md:p-8 border border-neutral-800"
+                  >
+                    <h4
+                      class="text-white font-bold mb-6 flex items-center gap-2"
+                    >
+                      <span
+                        class="w-1.5 h-1.5 bg-blue-500 rounded-full"
+                        aria-hidden="true"
+                      ></span
+                      >주요 수행 업무
+                    </h4>
+                    <ul class="space-y-4">
+                      <li
+                        class="flex gap-3 text-neutral-400 text-sm md:text-base leading-relaxed"
+                      >
+                        <span
+                          class="text-blue-500 mt-1.5 flex-shrink-0 text-[10px]"
+                          aria-hidden="true"
+                          >●</span
+                        >
+                        시맨틱 마크업을 활용한 웹 표준 준수 구조 설계
+                      </li>
+                      <li
+                        class="flex gap-3 text-neutral-400 text-sm md:text-base leading-relaxed"
+                      >
+                        <span
+                          class="text-blue-500 mt-1.5 flex-shrink-0 text-[10px]"
+                          aria-hidden="true"
+                          >●</span
+                        >
+                        jQuery 기반 UI 인터랙션 및 반응형 레이아웃 구현
+                      </li>
+                      <li
+                        class="flex gap-3 text-neutral-400 text-sm md:text-base leading-relaxed"
+                      >
+                        <span
+                          class="text-blue-500 mt-1.5 flex-shrink-0 text-[10px]"
+                          aria-hidden="true"
+                          >●</span
+                        >
+                        퍼블리싱 가이드 작성을 통한 원활한 개발 협업 지원
+                      </li>
+                    </ul>
+                    <div class="flex items-center gap-4 mt-10">
+                      <a
+                        href="https://on.zeropaypoint.or.kr/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        title="새 창으로 방과후 드림 사이트 열기"
+                        class="text-xs font-bold text-white border-b border-white hover:text-blue-400 hover:border-blue-400 transition-all pb-1"
+                      >
+                        Visit Site
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- //projects -->
+      <!-- skills -->
+      <section
+        id="skills"
+        class="py-24 bg-neutral-50 dark:bg-neutral-950"
+        aria-labelledby="skills-title"
+      >
+        <div class="relative max-w-6xl mx-auto px-6 py-24">
+          <div
+            class="absolute -top-20 left-3 text-[120px] font-black text-neutral-200 pointer-events-none select-none"
+          >
+            <span class="">04</span>
+          </div>
+          <h2
+            id="skills-title"
+            class="text-3xl md:text-4xl font-black tracking-tight mb-10 uppercase"
+          >
+            APPROACH & SKILLS
+          </h2>
+
+          <div class="grid gap-12 mt-16">
+            <div
+              class="group relative grid md:grid-cols-12 gap-8 p-8 rounded-3xl bg-white dark:bg-neutral-900 border border-neutral-100 dark:border-neutral-800 hover:shadow-2xl transition-all duration-500"
+            >
+              <div class="md:col-span-5 space-y-4">
+                <div class="flex items-center gap-3">
+                  <span
+                    class="flex items-center justify-center w-8 h-8 rounded-full bg-blue-600 text-white text-xs font-black"
+                    >01</span
+                  >
+                  <h3
+                    class="font-black text-2xl tracking-tighter text-neutral-900 dark:text-white"
+                  >
+                    사용자 중심의 기획 분석
+                  </h3>
+                </div>
+                <p
+                  class="text-neutral-500 dark:text-neutral-400 leading-relaxed break-keep"
+                >
+                  사용자의 판단 흐름을 분석하여 정보의 우선순위와 맥락을
+                  설계합니다. <br />단순한 구현을 넘어 기획 의도를 정확히
+                  파악하여 최적의 UI 구조를 제안합니다.
+                </p>
+              </div>
+              <div class="md:col-span-7 space-y-6">
+                <ul class="flex flex-wrap gap-2">
+                  <li
+                    class="text-sm font-bold text-neutral-800 dark:text-neutral-200 bg-neutral-100 dark:bg-neutral-800 px-4 py-2 rounded-xl"
+                  >
+                    사용자 행동 중심 설계
+                  </li>
+                  <li
+                    class="text-sm font-bold text-neutral-800 dark:text-neutral-200 bg-neutral-100 dark:bg-neutral-800 px-4 py-2 rounded-xl"
+                  >
+                    정보 계층 및 메뉴 구조 설계
+                  </li>
+                  <li
+                    class="text-sm font-bold text-neutral-800 dark:text-neutral-200 bg-neutral-100 dark:bg-neutral-800 px-4 py-2 rounded-xl"
+                  >
+                    비즈니스 로직 분석 및 반영
+                  </li>
+                  <li
+                    class="text-sm font-bold text-neutral-800 dark:text-neutral-200 bg-neutral-100 dark:bg-neutral-800 px-4 py-2 rounded-xl"
+                  >
+                    UI 기획 및 가이드 보완
+                  </li>
+                </ul>
+                <div
+                  class="pt-4 border-t border-neutral-50 dark:border-neutral-800"
+                >
+                  <div
+                    class="flex flex-wrap gap-4 text-xs font-black text-blue-600/50 uppercase tracking-widest"
+                  >
+                    <span>Figma</span><span>Zeplin</span><span>Adobe XD</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="group relative grid md:grid-cols-12 gap-8 p-8 rounded-3xl bg-white dark:bg-neutral-900 border border-neutral-100 dark:border-neutral-800 hover:shadow-2xl transition-all duration-500"
+            >
+              <div class="md:col-span-5 space-y-4">
+                <div class="flex items-center gap-3">
+                  <span
+                    class="flex items-center justify-center w-8 h-8 rounded-full bg-blue-600 text-white text-xs font-black"
+                    >02</span
+                  >
+                  <h3
+                    class="font-black text-2xl tracking-tighter text-neutral-900 dark:text-white"
+                  >
+                    견고한 UI 및 퍼블리싱 기반
+                  </h3>
+                </div>
+                <p
+                  class="text-neutral-500 dark:text-neutral-400 leading-relaxed break-keep"
+                >
+                  웹 표준과 접근성을 준수하며 유지보수가 용이한 시맨틱 마크업을
+                  설계합니다. <br />다양한 디바이스 환경에 최적화된 반응형
+                  아키텍처를 구축합니다.
+                </p>
+              </div>
+              <div class="md:col-span-7 space-y-6">
+                <ul class="flex flex-wrap gap-2">
+                  <li
+                    class="text-sm font-bold text-neutral-800 dark:text-neutral-200 bg-neutral-100 dark:bg-neutral-800 px-4 py-2 rounded-xl"
+                  >
+                    시맨틱 마크업
+                  </li>
+                  <li
+                    class="text-sm font-bold text-neutral-800 dark:text-neutral-200 bg-neutral-100 dark:bg-neutral-800 px-4 py-2 rounded-xl"
+                  >
+                    웹 표준 & 접근성 지침 준수
+                  </li>
+                  <li
+                    class="text-sm font-bold text-neutral-800 dark:text-neutral-200 bg-neutral-100 dark:bg-neutral-800 px-4 py-2 rounded-xl"
+                  >
+                    반응형 웹 아키텍처
+                  </li>
+                  <li
+                    class="text-sm font-bold text-neutral-800 dark:text-neutral-200 bg-neutral-100 dark:bg-neutral-800 px-4 py-2 rounded-xl"
+                  >
+                    SCSS / Tailwind CSS
+                  </li>
+                </ul>
+                <div
+                  class="pt-4 border-t border-neutral-50 dark:border-neutral-800"
+                >
+                  <div
+                    class="flex flex-wrap gap-4 text-xs font-black text-blue-600/50 uppercase tracking-widest"
+                  >
+                    <span>HTML5</span><span>CSS3</span><span>SCSS</span
+                    ><span>Tailwind CSS</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="group relative grid md:grid-cols-12 gap-8 p-8 rounded-3xl bg-white dark:bg-neutral-900 border border-neutral-100 dark:border-neutral-800 hover:shadow-2xl transition-all duration-500"
+            >
+              <div class="md:col-span-5 space-y-4">
+                <div class="flex items-center gap-3">
+                  <span
+                    class="flex items-center justify-center w-8 h-8 rounded-full bg-blue-600 text-white text-xs font-black"
+                    >03</span
+                  >
+                  <h3
+                    class="font-black text-2xl tracking-tighter text-neutral-900 dark:text-white"
+                  >
+                    프론트엔드 엔지니어링
+                  </h3>
+                </div>
+                <p
+                  class="text-neutral-500 dark:text-neutral-400 leading-relaxed break-keep"
+                >
+                  컴포넌트 단위의 재사용성을 극대화하고 전역 상태 관리 및 API
+                  연동을 통해 안정적이고 동적인 웹 애플리케이션을 구현합니다.
+                </p>
+              </div>
+              <div class="md:col-span-7 space-y-6">
+                <ul class="flex flex-wrap gap-2">
+                  <li
+                    class="text-sm font-bold text-neutral-800 dark:text-neutral-200 bg-neutral-100 dark:bg-neutral-800 px-4 py-2 rounded-xl"
+                  >
+                    Vue 3 / Vue 2
+                  </li>
+                  <li
+                    class="text-sm font-bold text-neutral-800 dark:text-neutral-200 bg-neutral-100 dark:bg-neutral-800 px-4 py-2 rounded-xl"
+                  >
+                    React / TypeScript
+                  </li>
+                  <li
+                    class="text-sm font-bold text-neutral-800 dark:text-neutral-200 bg-neutral-100 dark:bg-neutral-800 px-4 py-2 rounded-xl"
+                  >
+                    공통 컴포넌트 라이브러리 설계
+                  </li>
+                  <li
+                    class="text-sm font-bold text-neutral-800 dark:text-neutral-200 bg-neutral-100 dark:bg-neutral-800 px-4 py-2 rounded-xl"
+                  >
+                    JavaScript (ES6+)
+                  </li>
+                </ul>
+                <div
+                  class="pt-4 border-t border-neutral-50 dark:border-neutral-800"
+                >
+                  <div
+                    class="flex flex-wrap gap-4 text-xs font-black text-blue-600/50 uppercase tracking-widest"
+                  >
+                    <span>Vue.js</span><span>React</span><span>TypeScript</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="mt-20 p-8 rounded-3xl bg-blue-600 text-white flex flex-col md:flex-row items-center justify-between gap-8 shadow-xl shadow-blue-200 dark:shadow-none"
+          >
+            <div class="space-y-2 text-center md:text-left">
+              <h4 class="text-2xl font-black italic tracking-tighter">
+                AI 기반의 스마트 문제 해결
+              </h4>
+              <p class="opacity-90 font-medium break-keep">
+                최신 AI 도구를 실무에 적극 도입하여, 복잡한 라이브러리나 생소한
+                기술 스택도
+                <br class="hidden lg:block" />
+                핵심을 빠르게 파악해 현장에 즉시 적용하는 탁월한 실무 적응력을
+                보유하고 있습니다.
+              </p>
+            </div>
+            <div class="flex flex-wrap justify-center gap-3 relative z-10">
+              <ul
+                class="flex flex-wrap justify-center gap-3"
+                aria-label="AI 활용 강점"
+              >
+                <li
+                  class="px-5 py-2.5 bg-white/20 rounded-2xl font-black text-sm backdrop-blur-md border border-white/10 shadow-lg"
+                >
+                  효율적인 AI 협업
+                </li>
+                <li
+                  class="px-5 py-2.5 bg-white/20 rounded-2xl font-black text-sm backdrop-blur-md border border-white/10 shadow-lg"
+                >
+                  빠른 기술 습득
+                </li>
+                <li
+                  class="px-5 py-2.5 bg-white/20 rounded-2xl font-black text-sm backdrop-blur-md border border-white/10 shadow-lg"
+                >
+                  실무 적응력 100%
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- //skills -->
+      <!-- contact -->
+      <section
+        id="contact"
+        class="py-24 bg-neutral-50 dark:bg-neutral-950 border-t border-neutral-100 dark:border-neutral-800"
+        aria-labelledby="contact-title"
+      >
+        <div class="relative max-w-6xl mx-auto px-6 py-24">
+          <div
+            class="absolute -top-20 left-3 text-[120px] font-black text-neutral-200 dark:text-neutral-900/50 pointer-events-none select-none"
+            aria-hidden="true"
+          >
+            05
+          </div>
+
+          <div class="relative z-10">
+            <h2
+              id="contact-title"
+              class="text-3xl md:text-4xl font-black tracking-[0.2em] text-blue-600 mb-10 uppercase"
+            >
+              CONTACT
+            </h2>
+
+            <h3
+              class="text-4xl md:text-5xl font-black text-neutral-900 dark:text-white mb-8 leading-[1.4] break-keep"
+            >
+              기획과 개발 사이의 간극을 기술로 채웁니다.<br />
+              <span class="text-blue-600">안정적인 구현과 원활한 소통</span>으로
+              팀에 기여하겠습니다.
+            </h3>
+
+            <div class="grid md:grid-cols-2 gap-8 items-start mt-12">
+              <div class="space-y-10">
+                <div class="group">
+                  <h4
+                    class="text-2xl font-black text-neutral-400 uppercase tracking-widest mb-2"
+                  >
+                    Email
+                  </h4>
+                  <a
+                    href="mailto:juhuiyang@naver.com"
+                    class="font-bold text-neutral-900 dark:text-white hover:text-blue-600 transition-colors border-b-2 border-neutral-200 dark:border-neutral-800 hover:border-blue-600 pb-1"
+                  >
+                    juhuiyang@naver.com
+                  </a>
+                </div>
+
+                <div class="group">
+                  <h4
+                    class="text-2xl font-black text-neutral-400 uppercase tracking-widest mb-2"
+                  >
+                    Phone
+                  </h4>
+                  <a
+                    href="tel:01027637350"
+                    class="font-bold text-neutral-900 dark:text-white hover:text-blue-600 transition-colors"
+                  >
+                    010-2763-7350
+                  </a>
+                </div>
+              </div>
+
+              <div
+                class="relative p-8 md:p-10 bg-white dark:bg-neutral-900/50 rounded-3xl overflow-hidden border-l-4 border-blue-600 shadow-sm flex flex-col justify-center"
+              >
+                <span
+                  class="absolute -right-4 -bottom-8 text-[12rem] font-black text-neutral-100 dark:text-white/5 select-none pointer-events-none"
+                  aria-hidden="true"
+                >
+                  ”
+                </span>
+
+                <div class="relative z-10">
+                  <p
+                    class="text-lg md:text-xl font-bold text-neutral-800 dark:text-neutral-200 leading-[1.6] mb-8 break-keep"
+                  >
+                    다양한 프로젝트 환경에서 쌓은 빠른 적응력으로<br />
+                    귀사의 팀에
+                    <span class="text-blue-600 dark:text-blue-400"
+                      >실질적인 기술적 가치</span
+                    >를 더하겠습니다.
+                  </p>
+
+                  <div class="flex flex-wrap gap-2">
+                    <span
+                      class="px-3 py-1 bg-blue-50 dark:bg-blue-900/20 text-blue-600 dark:text-blue-400 text-[11px] font-bold rounded-full"
+                      >#빠른 적응력</span
+                    >
+
+                    <span
+                      class="px-3 py-1 bg-blue-50 dark:bg-blue-900/20 text-blue-600 dark:text-blue-400 text-[11px] font-bold rounded-full"
+                      >#안정적인 구현</span
+                    >
+
+                    <span
+                      class="px-3 py-1 bg-blue-50 dark:bg-blue-900/20 text-blue-600 dark:text-blue-400 text-[11px] font-bold rounded-full"
+                      >#원활한 소통</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- //contact -->
+      <footer
+        class="py-4 bg-white dark:bg-black border-t border-neutral-100 dark:border-neutral-900"
+      >
+        <div class="max-w-6xl mx-auto px-6">
+          <p class="text-xs text-neutral-400 font-medium">
+            © 2026 Baek Ju-hui. Built with HTML & Tailwind CSS.
+          </p>
+        </div>
+      </footer>
+    </main>
+  </body>
+</html>
+<script></script>
